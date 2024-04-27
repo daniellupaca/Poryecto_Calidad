@@ -1,4 +1,3 @@
-<!-- Empezado por Farley Viveros Blanco -->
 <!doctype html>
 <hmtl>
 <head>
@@ -49,11 +48,11 @@
                     <h3 class="mb-4">EDITAR ASISTENCIA</h3>
                     <div class="form-group">                   
                         <label for="nombre"> Nombre:</label>
-                        <input type="text" class="form-control" name="nombre" id="nombre" value="<?php echo $nombre?>" size="35" />
+                        <input type="text" class="form-control" name="nombre" id="nombre" value="<?php echo htmlspecialchars($nombre, ENT_QUOTES, 'UTF-8')?>" size="35" />
                     </div>
                     <div class="form-group">
                         <label for="apellido"> Apellidos:</label>
-                        <input type="text" class="form-control" name="apellido" id="apellido" value="<?php echo $apellido?>" size="35" />
+                        <input type="text" class="form-control" name="apellido" id="apellido" value="<?php echo htmlspecialchars($apellido, ENT_QUOTES, 'UTF-8')?>" size="35" />
                     </div>
                     <div class="form-group">
                         <label for="fecha">  Día: DD/MM/YYYY </label><br>
@@ -63,9 +62,9 @@
                     <label for="asistencia">Asistencia:</label>
                         <select name="estado" class="form-control" id="">
                         <option value="">Seleccione asistencia</option>
-                        <option value="Asiste" <?php if($estado == "Asiste") echo "selected" ?> >Asiste</option>
-                        <option value="Tarde" <?php if($estado == "Tarde") echo "selected" ?>>Tarde</option>
-                        <option value="Falta" <?php if($estado == "Falta") echo "selected" ?>>Falta</option>
+                        <option value="Asiste" <?php if(htmlspecialchars($estado, ENT_QUOTES, 'UTF-8') == "Asiste") echo "selected" ?> >Asiste</option>
+                        <option value="Tarde" <?php if(htmlspecialchars($estado, ENT_QUOTES, 'UTF-8') == "Tarde") echo "selected" ?>>Tarde</option>
+                        <option value="Falta" <?php if(htmlspecialchars($estado, ENT_QUOTES, 'UTF-8') == "Falta") echo "selected" ?>>Falta</option>
                     </select>
                     </div>
                     <input type="submit" class="btn btn-primary" value="Actualizar Asistencia"/>
@@ -80,4 +79,3 @@
     </body>
 </hmtl>
 
-<!-- Terminado por Farley Viveros Blanco -->

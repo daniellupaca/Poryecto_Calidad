@@ -1,4 +1,3 @@
-<!-- Empezado por Farley Viveros Blanco -->
 <!doctype html>
 <hmtl>
     <head>
@@ -51,23 +50,23 @@
                     <h3 class="mb-4">EDITAR COMUNICADO</h3><br> 
                     <div class="form-group">                  
                         <label for="nombre"> Nombre:</label>
-                        <input type="text" class="form-control" name="nombre" id="nombre" value="<?php echo $nombre?>" size="35" disabled/>
+                        <input type="text" class="form-control" name="nombre" id="nombre" value="<?php echo htmlspecialchars($nombre, ENT_QUOTES, 'UTF-8')?>" size="35" disabled/>
                     </div>
                     <div class="form-group">
                         <label for="apellido"> Apellidos:</label>
-                        <input type="text" class="form-control" name="apellido" id="apellido" value="<?php echo $apellido?>" size="35" disabled/>
+                        <input type="text" class="form-control" name="apellido" id="apellido" value="<?php echo htmlspecialchars($apellido, ENT_QUOTES, 'UTF-8')?>" size="35" disabled/>
                     </div>
                     <div class="form-group">
                         <label for="telefono"> Telefono:</label>
-                        <input type="text" class="form-control" name="telefono" id="telefono" value="<?php echo $telefono?>" size="35" disabled/>
+                        <input type="text" class="form-control" name="telefono" id="telefono" value="<?php echo htmlspecialchars($telefono, ENT_QUOTES, 'UTF-8')?>" size="35" disabled/>
                     </div>
                     <div class="form-group">
                         <label for="correo"> Correo Electronico:</label>
-                        <input type="text" class="form-control" name="correo" id="correo" value="<?php echo $correo?>" size="35" disabled/>
+                        <input type="text" class="form-control" name="correo" id="correo" value="<?php echo htmlspecialchars($correo, ENT_QUOTES, 'UTF-8')?>" size="35" disabled/>
                     </div>
                     <div class="form-group">
                         <label for="observa"> Comunicado:</label>
-                        <textarea id="observa" class="form-control" name="observa" value="<?php echo $observacion?>" ></textarea>
+                        <textarea id="observa" class="form-control" name="observa"><?php echo htmlspecialchars($observacion, ENT_QUOTES, 'UTF-8')?></textarea>
                     <div>
                     <br>               
                     <input type="submit" class="btn btn-primary" value="Actualizar Comunicado"/>
@@ -83,4 +82,3 @@
     </body>
 </hmtl>
 
-<!-- Terminado por Farley Viveros Blanco -->

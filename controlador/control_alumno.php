@@ -1,4 +1,3 @@
-<!-- Empezado por Renato Chambilla Mardinez -->
 <?php
 session_start();
 include("../conexion.php");
@@ -24,4 +23,3 @@ if ($rs && mysqli_num_rows($rs) > 0) {
 mysqli_free_result($rs);
 mysqli_close($link);
 ?>
-<!-- Terminado por Renato Chambilla Mardinez -->

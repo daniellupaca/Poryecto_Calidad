@@ -1,4 +1,3 @@
-<!-- Empezado por Rene Poma Manchego -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,23 +51,23 @@
                 <h3 class="mb-4">EDITAR USUARIOS</h3>
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" class="form-control" name="nombre" id="nombre" value="<?php echo $nombre ?>" />
+                    <input type="text" class="form-control" name="nombre" id="nombre" value="<?php echo htmlspecialchars($nombre, ENT_QUOTES, 'UTF-8') ?>" />
                 </div>
                 <div class="form-group">
                     <label for="apellido">Apellidos:</label>
-                    <input type="text" class="form-control" name="apellido" id="apellido" value="<?php echo $apellido ?>" />
+                    <input type="text" class="form-control" name="apellido" id="apellido" value="<?php echo htmlspecialchars($apellido, ENT_QUOTES, 'UTF-8') ?>" />
                 </div>
                 <div class="form-group">
                     <label for="telefono">Telefono:</label>
-                    <input type="text" class="form-control" name="telefono" id="telefono" value="<?php echo $telefono ?>" />
+                    <input type="text" class="form-control" name="telefono" id="telefono" value="<?php echo htmlspecialchars($telefono, ENT_QUOTES, 'UTF-8') ?>" />
                 </div>
                 <div class="form-group">
                     <label for="correo">Correo Electronico:</label>
-                    <input type="text" class="form-control" name="correo" id="correo" value="<?php echo $correo ?>" />
+                    <input type="text" class="form-control" name="correo" id="correo" value="<?php echo htmlspecialchars($correo, ENT_QUOTES, 'UTF-8') ?>" />
                 </div>
                 <div class="form-group">
                     <label for="contra">Contraseña:</label>
-                    <input type="text" class="form-control" name="contra" id="contra" value="<?php echo $contrasenia ?>" />
+                    <input type="text" class="form-control" name="contra" id="contra" value="<?php echo htmlspecialchars($contrasenia, ENT_QUOTES, 'UTF-8') ?>" />
                 </div>
                 <div class="form-group">
                     <label for="idrol">Rol:</label>
@@ -89,4 +88,3 @@
 </body>
 </html>
 
-<!-- Terminado por Rene Poma Manchego -->
