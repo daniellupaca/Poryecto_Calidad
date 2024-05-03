@@ -33,7 +33,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="password" class="form-label">Contraseña:</label> 
-                  <input type="password" class="form-control" name="password" id="password" maxlength="10" placeholder="Ingrese su contraseña...">
+                  <input type="password" class="form-control" name="password" id="password" maxlength="100" placeholder="Ingrese su contraseña...">
                 </div>
                 <div class="text-center">
                   <input class="form-control btn btn-purple mt-3" type="submit" value="Entrar">

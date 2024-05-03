@@ -1,4 +1,3 @@
-<!-- Empezado por Farley Viveros Blanco -->
 <!doctype html> 
 <html> 
 <head> 
@@ -49,4 +48,3 @@
 </div> 
 </body> 
 </html>
-<!-- Terminado por Farley Viveros Blanco -->

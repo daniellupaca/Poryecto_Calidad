@@ -1,4 +1,3 @@
-<!-- Empezado por Aurelia Japura Herminia -->
 <!doctype html> 
 <html> 
 <head> 
@@ -49,4 +48,3 @@
 </div> 
 </body> 
 </html>
-<!-- Terminado por Aurelia Japura Herminia -->

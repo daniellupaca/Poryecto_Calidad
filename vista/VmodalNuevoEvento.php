@@ -1,4 +1,3 @@
-<!-- Empezado por Rene Poma Manchego -->
 <div class="modal" id="exampleModal"  tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -57,4 +56,3 @@
     </div>
   </div>
 </div>
-<!-- Terminado por Rene Poma Manchego -->
